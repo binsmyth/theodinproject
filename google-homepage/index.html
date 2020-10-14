@@ -6,54 +6,131 @@
             html,body{
                 height:100%;
                 margin:0;
+                font-family:arial,sans-serif;
             }
             .logo{
                 height:92px;
                 width:272px;
             }
             .top_links{
-
+                display:block;
+                margin-left:1.5em;
+                margin-top:1.3em;
+            }
+            .top_links a{
+                text-decoration:none;
+                color:#000;
+                opacity:0.75;
+                padding:0.4em;
+                font-size:13px;
             }
             .container{
                 position:relative;
                 min-height:100%;
-                margin-bottom:-40px;
             }
             .main{
                 position:absolute;
                 top:50%;
                 left:50%;
-                margin: -70px 0 0 -170px;
+                margin: -170px 0 0 -136px;
             }
-            
+            .searchForm{
+                display:block;
+            }
+            .searchBorder{
+                border: 1px solid #dfe1e5;
+                margin-top:1.4em;
+                margin-left:-6.6em;
+                padding: 4px;
+                width: 29.4em;
+                height:2.2em;
+                border-radius: 37px;
+            }
+            .textSearch{
+                border:none;
+                height:84%;
+                font-size:16px;
+                width:80%;
+                margin-left:43px;
+                margin-top:-0.05em;
+            }
+            .textSearch:focus{
+                outline:none;
+            }
+            .searchButtons{
+                margin-left:25px;
+                padding-top:50px;
+            }
+            .bottom_links{
+                position:absolute;
+                background-color:#f2f2f2;
+                height:3em;
+                width:100%;
+                bottom:22px;
+                border-top:1px solid rgb(227,227,227);
+            }
+            .bottom_links>div{
+                margin:1em;
+                
+            }
+            .bottom_links a{
+                text-decoration:none;
+                color:#000;
+                opacity:0.75;
+                padding:0.4em;
+                font-size:14px;
+                padding:1.5em;
+            }
+            .floatLinksRight{
+                position:absolute;
+                right:0;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="top_links">
-                <a href="#">About</a>
-                <a href="#">Store</a>
-                <a href="#">Gmail</a>
-                <a href="#">Images</a>
-                <a href="#">others</a>
-                <a href="#">Sign In</a>
+                <span>
+                    <a href="#">About</a>
+                    <a href="#">Store</a>
+                </span>
+                
+                <span class="floatLinksRight">
+                    <a href="#">Gmail</a>
+                    <a href="#">Images</a>
+                    <a href="#"><img width="20" height="20" src="/images/60991.png" /></a>
+                    <a href="#"><img width="30" height="30" style="border-radius:100%" src="/images/user.png"></a>
+                </span>
+                
             </div>
             <div class="main">
                 <img class="logo"src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
-                <input type="text"/>
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
+                <div class="searchForm">
+                    <div class="searchBorder">
+                        <input class="textSearch" type="text"/>
+                    </div>
+                    <div class="searchButtons">
+                        <button>Google Search</button>
+                        <button>I'm Feeling Lucky</button>
+                    </div>
+                </div>
+            </div>
+
+        <div class="bottom_links">
+            <div>
+                <span>
+                    <a href="#">Advertising</a>
+                    <a href="#">Business</a>
+                    <a href="#">How Search Works</a>
+                </span>
+                
+                <span class="floatLinksRight">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Settings</a>
+                </span>
             </div>
         </div>
-
-        <div>
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">How Search Works</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
-        </div>
-
+    </div>
     </body>
 </html>
