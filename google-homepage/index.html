@@ -46,6 +46,11 @@
                 height:2.2em;
                 border-radius: 37px;
             }
+            .seachBorder:focus,.searchBorder:hover{
+                outline:none;
+                border-color:#9ecaed;
+                box-shadow:0 0 10px #9ecaed;
+            }
             .textSearch{
                 border:none;
                 height:84%;
@@ -85,6 +90,17 @@
                 position:absolute;
                 right:0;
             }
+            .button {
+                padding:10px;
+                background-color:#f2f2f2;
+                text-decoration:none;
+                color:#000;
+                border-radius:.2em;
+            }
+            
+            .button:hover{
+                border:1px solid black;
+            }
         </style>
     </head>
     <body>
@@ -106,12 +122,12 @@
             <div class="main">
                 <img class="logo"src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
                 <div class="searchForm">
-                    <div class="searchBorder">
+                    <div tabindex="1" class="searchBorder">
                         <input class="textSearch" type="text"/>
                     </div>
                     <div class="searchButtons">
-                        <button>Google Search</button>
-                        <button>I'm Feeling Lucky</button>
+                        <a class="button" href="#">Google Search</a>
+                        <a class="button" href="#">I'm Feeling Lucky</a>
                     </div>
                 </div>
             </div>
@@ -132,5 +148,6 @@
             </div>
         </div>
     </div>
+    
     </body>
 </html>
