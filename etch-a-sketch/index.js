@@ -1,5 +1,3 @@
-//create divs(16X16)
-  //create row and columns
 var allDiv = document.querySelectorAll('div.container');
 var rainbowCheck = document.querySelector('#rainbow');
 var setColor="black";
@@ -21,7 +19,7 @@ var rainbowColor = function(){
   var color = `rgb(${r},${g},${b})`;
   return color;
 }
-
+rainbowColor
 //Create rows
 var createRows = function(numberOfRows){
   if(numberOfRows < 0 || numberOfRows>10000){

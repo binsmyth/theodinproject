@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Calculator</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+	<link rel="stylesheet" href="https://unpkg.com/98.css" />
+	<style>
+		.container{
+			width:20em;
+			height:20em;
+		}
+		.grid-container{
+			display:grid;
+			grid-template-columns:repeat(minmax(250px,1fr));
+			width:100%;
+			height:100%;
+		}
+		.box1{
+			grid-column-start:1;
+			grid-column-end:5;
+		}
+		.window{
+			width:350px;
+		}
+		.deadcenter{
+			display:flex;
+		}
+	</style>
+	<body>
+		<!--<div id="container" class="container"  tabindex="0">-->	
+		<div id="container" class="window" tabindex="0">
+			<div class="title-bar">
+				<div class="title-bar-text">Calculator</div>
+				<div class="title-bar-controls">
+					<button aria-label="Minimize"></button>
+					<button aria-label="Maximize"></button>
+					<button aria-label="Close"></button>
+				</div>
+			</div>
+				<div class="window-body">
+					<div class="grid-container">
+					<input class="box1" type="text" class="calculationtext" id="calculations" readonly/>	
+					<div class="box1">&nbsp;</div>
+					<button id="clear" data-value="C" type="button">C</button>	
+					<button id="backspace" data-value="backspace" type="button">B</button>	
+					<button>&nbsp;</button>
+					<button id="add" class="add" data-value="+"  type="button">+</button>
+					<button id="1" data-value="1" type="button">1</button>
+					<button id="2" data-value="2" type="button">2</button>
+					<button id="3" data-value="3" type="button">3</button>
+					<button id="subtract" class="subtract" data-value="-" type="button">-</button>
+					<button id="4" data-value="4" type="button">4</button>
+					<button id="5" data-value="5" type="button">5</button>
+					<button id="6" data-value="6" type="button">6</button>
+					<button id="multiply" data-value="*" type="button">X</button>
+					<button id="7" data-value="7" type="button">7</button>
+					<button id="8" data-value="8" type="button">8</button>
+					<button id="9" data-value="9" type="button">9</button>
+					<button id="divide" data-value="/" type="button">/</button>
+					<button id="0" data-value="0" type="button">0</button>
+					<button id="dot" data-value="." type="button">.</button>	
+					<button>&nbsp;</button>
+					<button id="evaluate" data-value="="  type="button">=</button>
+					</div>
+			</div>
+		</div>
+		<!--</div>-->
+				<script src="calculator.js"></script>
+</body>
+</html>
+
