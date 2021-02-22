@@ -57,7 +57,7 @@ function processOperations(handler){
 						}
 					
 						//remove handler when evaluating
-						if(handler.match(/[=]/) || handler === "Enter"){
+						if(handler.match(/[=]/)){
 							handler = ""
 						}
 						console.log(display.value.charAt(display.value.length-1))
