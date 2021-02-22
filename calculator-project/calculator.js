@@ -77,7 +77,7 @@ function processOperations(handler){
 							handler = ""
 							dotButton.disabled=false
 						}
-						if(handler === "backspace"){
+						if(handler === "Backspace"){
 							handler = ""
 							if(display.value.charAt(display.value.length-1) === " "){
 								display.value = display.value.slice(0,-3)
