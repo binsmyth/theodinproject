@@ -8,4 +8,4 @@ def stock_picker(orgArr)
   pickedStockDays = [indexOfChoice, maxPriceDay]
   return pickedStockDays
 end
-puts stock_picker([17,3,6,9,15,8,6,1,10])
+puts stock_picker([17,3,1,6,9,15,8,6,1,10])
